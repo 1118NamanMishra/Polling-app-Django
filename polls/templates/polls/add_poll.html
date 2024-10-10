@@ -1,0 +1,38 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block custom_css %}
+<link rel="stylesheet" href="{% static 'css/poll_style.css' %}">
+{% endblock custom_css %}
+
+{% block content %}
+<div class="poll-wrapper">
+    <div class="form-container">
+        <h2>Create a New Poll</h2>
+        
+        {% if messages %}
+        <ul class="message-list">
+            {% for message in messages %}
+            <li class="{{ message.tags }}">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+            <div class="input-group">
+                {{ field.label_tag }}
+                {{ field }}
+                <div class="error-message">{{ field.errors }}</div>
+            </div>
+            {% endfor %}
+            <button type="submit" class="btn-primary">Create Poll</button>
+            <a href="{% url 'polls:list' %}" class="btn-secondary">Back</a>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+
+

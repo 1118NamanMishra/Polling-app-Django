@@ -1,0 +1,29 @@
+.container {
+    margin-top: 50px;
+}
+
+.messages {
+    margin-bottom: 20px;
+}
+
+.messages div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination {
+    justify-content: center;
+}

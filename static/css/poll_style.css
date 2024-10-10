@@ -1,0 +1,54 @@
+.poll-wrapper {
+    background-color: #f0f0f5;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group .error-message {
+    color: #e74c3c;
+    font-size: 0.875em;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.message-list {
+    margin-bottom: 20px;
+    color: #e74c3c;
+    list-style-type: none;
+    padding: 0;
+}

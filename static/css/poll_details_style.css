@@ -1,0 +1,29 @@
+.container {
+    margin-top: 50px;
+
+    width: 40rem;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.messages {
+    margin-bottom: 20px;
+}
+
+.messages div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    margin-top: 20px;
+}
+
+.btn-warning {
+    margin-top: 20px;
+}
